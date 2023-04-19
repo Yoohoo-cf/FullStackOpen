@@ -13,3 +13,4 @@ sequenceDiagram
     API->>code: Send response to Javascript Code
     code-->>browser: HTTP 201 Created
     browser-->>user: Display the new note
+ ```
