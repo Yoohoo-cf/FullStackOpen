@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# unicafe(Feedback Statistics) Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application that allows users to provide feedback and displays statistics based on the collected feedback. It consists of several components, including `Button`, `StatisticLine`, and `Statistics`, which are used to gather feedback and display statistics.
 
-## Available Scripts
+## Components
 
-In the project directory, you can run:
+### Button
 
-### `npm start`
+The `Button` component renders a button that triggers a callback function when clicked. It receives `handleClick` and `text` props, which determine the function to be executed and the text displayed on the button, respectively.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### StatisticLine
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The `StatisticLine` component renders a table row that displays a text label and its corresponding value. It receives `text` and `value` props, which determine the label and value displayed in the row, respectively.
 
-### `npm test`
+### Statistics
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The `Statistics` component displays statistics based on the collected feedback. If no feedback is given, it displays a message indicating that no feedback has been provided. Otherwise, it renders a table with various statistics, such as the number of "good", "neutral", and "bad" feedback, the total number of feedback collected, the average score, and the percentage of positive feedback. These statistics are calculated based on the props received from the parent component `App`.
 
-### `npm run build`
+### App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The `App` component is the root component of the application. It manages the state for the feedback counts (i.e., "good", "neutral", and "bad") and calculates the total number of feedback collected, the average score, and the percentage of positive feedback. It renders the `Button` and `Statistics` components, passing the necessary props to them.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository to your local machine.
+2. Install the dependencies using `npm install` or `yarn install`.
+3. Run the application using `npm start` or `yarn start`.
+4. Open your web browser and go to `http://localhost:3000` to view the application.
+5. Provide feedback by clicking on the buttons.
+6. View the statistics displayed by the `Statistics` component based on the collected feedback.
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project is licensed under the [MIT License](LICENSE), which is an open source license allowing for free use, modification, and distribution of the code.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If you would like to contribute to this project, feel free to open an issue or submit a pull request. Your contributions are greatly appreciated!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or feedback, please feel free to contact me.
